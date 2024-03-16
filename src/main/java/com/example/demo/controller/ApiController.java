@@ -25,12 +25,12 @@ public String createCustomerDetails(@RequestBody Customer cust)
 	this.cust=cust;
 	return "customer created successfully";
 }
-@PutMapping
-public String updateCustomerDetails(@RequestBody Customer cust)
-{
-	this.cust=cust;
-	return "customer updated successfully";
-}
+//@PutMapping
+//public String updateCustomerDetails(@RequestBody Customer cust)
+//{
+//	this.cust=cust;
+//	return "customer updated successfully";
+//}
 @DeleteMapping("{cid}")
 public String deleteCustomerDetails(String cid)
 {
